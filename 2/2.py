@@ -1,5 +1,8 @@
 from itertools import product, permutations
 result = set()
+'''
+В общем и целом такая сложная программа здесь не всегда нужна, но иногда хреново обычной считается
+'''
 
 
 def f(x, y, z, w):
