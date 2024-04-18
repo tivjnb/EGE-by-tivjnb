@@ -6,6 +6,7 @@ def f(s, hod):
 
     variants = [f(s+1, hod-1), f(s+2, hod-1), f(s*10, hod-1)]
     return any(variants) if hod % 2 !=0 else all(variants)
+#  Если в каком-то задании нужен неудачный ход, то мы заменяем второй all на any
 
 
 print('19', [x for x in range(1, 92) if f(x, 2)])  # Ваня первым ходом
